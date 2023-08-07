@@ -1,7 +1,7 @@
 import 'package:bot_toast/bot_toast.dart';
-import 'package:empty_project/UI/shared/colors.dart';
-import 'package:empty_project/UI/shared/utils.dart';
-import 'package:empty_project/core/enums/message_type.dart';
+import 'package:quiz/UI/shared/colors.dart';
+import 'package:quiz/UI/shared/utils.dart';
+import 'package:quiz/core/enums/message_type.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 

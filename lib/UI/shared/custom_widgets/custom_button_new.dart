@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:empty_project/UI/shared/colors.dart';
-import 'package:empty_project/UI/shared/utils.dart';
+import 'package:quiz/UI/shared/colors.dart';
+import 'package:quiz/UI/shared/utils.dart';
 
 class CustomButtonNew extends StatelessWidget {
   final String text;

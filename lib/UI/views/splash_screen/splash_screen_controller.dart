@@ -1,4 +1,4 @@
-import 'package:empty_project/core/services/base_controller.dart';
+import 'package:quiz/core/services/base_controller.dart';
 
 class SplashScreenController extends BaseController {
   @override

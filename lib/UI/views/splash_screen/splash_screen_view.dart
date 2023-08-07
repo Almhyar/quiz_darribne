@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:empty_project/UI/shared/colors.dart';
-import 'package:empty_project/UI/shared/utils.dart';
-import 'package:empty_project/UI/views/splash_screen/splash_screen_controller.dart';
+import 'package:quiz/UI/shared/colors.dart';
+import 'package:quiz/UI/shared/utils.dart';
+import 'package:quiz/UI/views/splash_screen/splash_screen_controller.dart';
 import 'package:get/get.dart';
 
 class SplashScreenView extends StatefulWidget {

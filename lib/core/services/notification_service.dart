@@ -1,9 +1,9 @@
 import 'dart:async';
 
-import 'package:empty_project/core/data/models/notification_model.dart';
-import 'package:empty_project/core/enums/application_state.dart';
-import 'package:empty_project/core/enums/notification_type.dart';
-import 'package:empty_project/core/utils/general_util.dart';
+import 'package:quiz/core/data/models/notification_model.dart';
+import 'package:quiz/core/enums/application_state.dart';
+import 'package:quiz/core/enums/notification_type.dart';
+import 'package:quiz/core/utils/general_util.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:get/utils.dart';
 

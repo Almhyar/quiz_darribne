@@ -1,8 +1,8 @@
 import 'package:bot_toast/bot_toast.dart';
-import 'package:empty_project/UI/views/splash_screen/splash_screen_view.dart';
-import 'package:empty_project/core/enums/connectivity_status.dart';
-import 'package:empty_project/core/translation/app_translation.dart';
-import 'package:empty_project/core/utils/general_util.dart';
+import 'package:quiz/UI/views/splash_screen/splash_screen_view.dart';
+import 'package:quiz/core/enums/connectivity_status.dart';
+import 'package:quiz/core/translation/app_translation.dart';
+import 'package:quiz/core/utils/general_util.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';

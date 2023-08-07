@@ -1,6 +1,6 @@
-// import 'package:empty_project/UI/shared/utils.dart';
-// import 'package:empty_project/core/data/models/apis/meal_model.dart';
-// import 'package:empty_project/core/data/models/cart_model.dart';
+// import 'package:quiz/UI/shared/utils.dart';
+// import 'package:quiz/core/data/models/apis/meal_model.dart';
+// import 'package:quiz/core/data/models/cart_model.dart';
 // import 'package:get/state_manager.dart';
 
 // class CartService {

@@ -1,5 +1,5 @@
-import 'package:empty_project/core/enums/request_type.dart';
-import 'package:empty_project/core/utils/general_util.dart';
+import 'package:quiz/core/enums/request_type.dart';
+import 'package:quiz/core/utils/general_util.dart';
 
 class NetworkConfig {
   static String BASE_API = 'api/web/';

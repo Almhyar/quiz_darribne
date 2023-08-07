@@ -1,11 +1,11 @@
-import 'package:empty_project/UI/shared/custom_widgets/custom_toast.dart';
-import 'package:empty_project/app/my_app_controller.dart';
-import 'package:empty_project/core/data/repositories/shared_preference_repository.dart';
-import 'package:empty_project/core/enums/connectivity_status.dart';
-import 'package:empty_project/core/enums/message_type.dart';
-import 'package:empty_project/core/services/connectivity_service.dart';
-import 'package:empty_project/core/services/location_service.dart';
-import 'package:empty_project/core/services/notification_service.dart';
+import 'package:quiz/UI/shared/custom_widgets/custom_toast.dart';
+import 'package:quiz/app/my_app_controller.dart';
+import 'package:quiz/core/data/repositories/shared_preference_repository.dart';
+import 'package:quiz/core/enums/connectivity_status.dart';
+import 'package:quiz/core/enums/message_type.dart';
+import 'package:quiz/core/services/connectivity_service.dart';
+import 'package:quiz/core/services/location_service.dart';
+import 'package:quiz/core/services/notification_service.dart';
 import 'package:get/get.dart';
 
 SharedPreferenceRepository get storage =>

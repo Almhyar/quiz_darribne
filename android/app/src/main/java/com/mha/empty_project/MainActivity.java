@@ -1,4 +1,4 @@
-package com.mha.empty_project;
+package com.mha.quiz;
 
 import io.flutter.embedding.android.FlutterActivity;
 

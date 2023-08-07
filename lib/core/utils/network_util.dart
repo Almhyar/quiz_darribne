@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:bot_toast/bot_toast.dart';
-import 'package:empty_project/core/enums/request_type.dart';
+import 'package:quiz/core/enums/request_type.dart';
 import 'package:http/http.dart' as http;
 import 'package:mime/mime.dart';
 import 'package:path/path.dart' as path;

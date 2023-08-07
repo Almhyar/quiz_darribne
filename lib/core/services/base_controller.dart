@@ -1,8 +1,8 @@
 import 'package:bot_toast/bot_toast.dart';
-import 'package:empty_project/UI/shared/utils.dart';
-import 'package:empty_project/core/enums/operation_type.dart';
-import 'package:empty_project/core/enums/request_status.dart';
-import 'package:empty_project/core/utils/general_util.dart';
+import 'package:quiz/UI/shared/utils.dart';
+import 'package:quiz/core/enums/operation_type.dart';
+import 'package:quiz/core/enums/request_status.dart';
+import 'package:quiz/core/utils/general_util.dart';
 import 'package:get/get.dart';
 
 class BaseController extends GetxController {

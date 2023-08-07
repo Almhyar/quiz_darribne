@@ -1,4 +1,4 @@
-// import 'package:empty_project/core/data/network/network_config.dart';
+// import 'package:quiz/core/data/network/network_config.dart';
 
 // class UserEndPoints {
 //   static String login = NetworkConfig.getFulApiUrl('user/login');

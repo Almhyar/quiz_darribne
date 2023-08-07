@@ -1,10 +1,10 @@
 // import 'package:dartz/dartz.dart';
-// import 'package:empty_project/core/data/models/apis/token_info.dart';
-// import 'package:empty_project/core/data/models/common_response.dart';
-// import 'package:empty_project/core/data/network/endpoints/user_endpoints.dart';
-// import 'package:empty_project/core/data/network/network_config.dart';
-// import 'package:empty_project/core/enums/request_type.dart';
-// import 'package:empty_project/core/utils/network_util.dart';
+// import 'package:quiz/core/data/models/apis/token_info.dart';
+// import 'package:quiz/core/data/models/common_response.dart';
+// import 'package:quiz/core/data/network/endpoints/user_endpoints.dart';
+// import 'package:quiz/core/data/network/network_config.dart';
+// import 'package:quiz/core/enums/request_type.dart';
+// import 'package:quiz/core/utils/network_util.dart';
 
 // class UserRepository {
 //   Future<Either<String, TokenInfo>> login({

@@ -1,6 +1,6 @@
-import 'package:empty_project/core/enums/connectivity_status.dart';
-import 'package:empty_project/core/services/base_controller.dart';
-import 'package:empty_project/core/utils/general_util.dart';
+import 'package:quiz/core/enums/connectivity_status.dart';
+import 'package:quiz/core/services/base_controller.dart';
+import 'package:quiz/core/utils/general_util.dart';
 
 class MyAppController extends BaseController {
   ConnectivityStatus connectionStatus = ConnectivityStatus.ONLINE;

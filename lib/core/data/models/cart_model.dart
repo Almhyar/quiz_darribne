@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-//import 'package:empty_project/core/data/models/apis/meal_model.dart';
+//import 'package:quiz/core/data/models/apis/meal_model.dart';
 
 class CartModel {
   int? count;

@@ -1,8 +1,8 @@
 import 'dart:convert';
-import 'package:empty_project/core/data/models/cart_model.dart';
+import 'package:quiz/core/data/models/cart_model.dart';
 import 'package:get/get.dart';
-import 'package:empty_project/core/data/models/apis/token_info.dart';
-import 'package:empty_project/core/enums/data_type.dart';
+import 'package:quiz/core/data/models/apis/token_info.dart';
+import 'package:quiz/core/enums/data_type.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
 

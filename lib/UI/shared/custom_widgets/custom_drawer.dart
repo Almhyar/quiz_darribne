@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:empty_project/UI/shared/colors.dart';
-import 'package:empty_project/UI/shared/custom_widgets/custom_button_new.dart';
-import 'package:empty_project/UI/shared/utils.dart';
+import 'package:quiz/UI/shared/colors.dart';
+import 'package:quiz/UI/shared/custom_widgets/custom_button_new.dart';
+import 'package:quiz/UI/shared/utils.dart';
 
 class CustomDrawer extends StatefulWidget {
   const CustomDrawer({super.key});
