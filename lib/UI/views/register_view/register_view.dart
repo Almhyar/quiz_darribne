@@ -50,10 +50,11 @@ class _RegisterViewState extends State<RegisterView> {
             (screenWidth(15)).ph,
             CustomText(
               content: "اسم المستخدم",
-              fontSize: screenWidth(20),
+              fontSize: screenWidth(25),
               fontWeight: FontWeight.bold,
               colorText: AppColors.mainPurpleColor.withOpacity(0.5),
             ),
+            (screenWidth(35)).ph,
             CustomTextField(
               hintText: "اسم المستخدم",
               controller: controller.nameController,
@@ -63,10 +64,11 @@ class _RegisterViewState extends State<RegisterView> {
             (screenWidth(20)).ph,
             CustomText(
               content: "رقم الموبايل",
-              fontSize: screenWidth(20),
+              fontSize: screenWidth(25),
               fontWeight: FontWeight.bold,
               colorText: AppColors.mainPurpleColor.withOpacity(0.5),
             ),
+            (screenWidth(35)).ph,
             CustomTextField(
               hintText: "رقم الموبايل",
               controller: controller.phoneController,
@@ -77,12 +79,13 @@ class _RegisterViewState extends State<RegisterView> {
             (screenWidth(20)).ph,
             CustomText(
               content: "اختر الاختصاص",
-              fontSize: screenWidth(20),
+              fontSize: screenWidth(25),
               fontWeight: FontWeight.bold,
               colorText: AppColors.mainPurpleColor.withOpacity(0.5),
             ),
             Obx(() {
               return Row(
+                mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Radio(
                       value: "الطب البشري",
@@ -90,21 +93,30 @@ class _RegisterViewState extends State<RegisterView> {
                       groupValue: controller.groupValue.value,
                       onChanged: (newValue) =>
                           controller.groupValue.value = newValue.toString()),
-                  CustomText(content: "الطب البشري"),
+                  CustomText(
+                    content: "الطب البشري",
+                    fontSize: screenWidth(38),
+                  ),
                   Radio(
                       value: "طب الأسنان",
                       activeColor: AppColors.mainPurpleColor,
                       groupValue: controller.groupValue.value,
                       onChanged: (newValue) =>
                           controller.groupValue.value = newValue.toString()),
-                  CustomText(content: "طب الأسنان"),
+                  CustomText(
+                    content: "طب الأسنان",
+                    fontSize: screenWidth(38),
+                  ),
                   Radio(
                       value: "كلية الصيدلة",
                       activeColor: AppColors.mainPurpleColor,
                       groupValue: controller.groupValue.value,
                       onChanged: (newValue) =>
                           controller.groupValue.value = newValue.toString()),
-                  CustomText(content: "كلية الصيدلة")
+                  CustomText(
+                    content: "كلية الصيدلة",
+                    fontSize: screenWidth(38),
+                  )
                 ],
               );
             }),
@@ -119,7 +131,7 @@ class _RegisterViewState extends State<RegisterView> {
                           controller.groupValue.value = newValue.toString()),
                   CustomText(
                     content: "الهندسة المعلوماتية",
-                    fontSize: screenWidth(31),
+                    fontSize: screenWidth(42),
                   ),
                   Radio(
                       value: "الهندسة المعمارية",
@@ -129,7 +141,7 @@ class _RegisterViewState extends State<RegisterView> {
                           controller.groupValue.value = newValue.toString()),
                   CustomText(
                     content: "الهندسة المعمارية",
-                    fontSize: screenWidth(31),
+                    fontSize: screenWidth(42),
                   ),
                   Radio(
                       value: "التمريض",
@@ -139,7 +151,7 @@ class _RegisterViewState extends State<RegisterView> {
                           controller.groupValue.value = newValue.toString()),
                   CustomText(
                     content: "التمريض",
-                    fontSize: screenWidth(31),
+                    fontSize: screenWidth(42),
                   )
                 ],
               );
