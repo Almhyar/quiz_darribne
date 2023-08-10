@@ -1,4 +1,7 @@
 import 'package:bot_toast/bot_toast.dart';
+import 'package:google_fonts/google_fonts.dart';
+import 'package:quiz/UI/views/login_view.dart/login_view.dart';
+import 'package:quiz/UI/views/register_view/register_view.dart';
 import 'package:quiz/UI/views/splash_screen/splash_screen_view.dart';
 import 'package:quiz/core/enums/connectivity_status.dart';
 import 'package:quiz/core/translation/app_translation.dart';
@@ -27,13 +30,10 @@ class MyApp extends StatelessWidget {
           builder: BotToastInit(),
           navigatorObservers: [BotToastNavigatorObserver()],
           debugShowCheckedModeBanner: false,
-          // theme: ThemeData(
-          //   bottomNavigationBarTheme: BottomNavigationBarThemeData(
-          //       // backgroundColor: Colors.transparent,
-          //       ),
-          // ),
+          theme: ThemeData(
+              textTheme: TextTheme(bodyMedium: GoogleFonts.alexandria())),
           title: 'Flutter Demo',
-          home: const SplashScreenView()),
+          home: const LoginView()),
     );
   }
 }

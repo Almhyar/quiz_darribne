@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:quiz/UI/shared/colors.dart';
-import 'package:quiz/UI/shared/custom_widgets/custom_button_new.dart';
+import 'package:quiz/UI/shared/custom_widgets/custom_button.dart';
 import 'package:quiz/UI/shared/utils.dart';
 
 class CustomDrawer extends StatefulWidget {
@@ -19,7 +19,7 @@ class _CustomDrawerState extends State<CustomDrawer> {
       color: AppColors.mainWhiteColor,
       child: Column(
         children: [
-          CustomButtonNew(
+          CustomButton(
               text: "on",
               onPressed: () {
                 // Navigator.pop(context);

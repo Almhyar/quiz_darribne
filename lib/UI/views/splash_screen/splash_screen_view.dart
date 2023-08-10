@@ -19,26 +19,7 @@ class _SplashScreenViewState extends State<SplashScreenView> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Scaffold(
-        body: Stack(
-          children: [
-            SvgPicture.asset(
-              'assets/images/Background icons.svg',
-              fit: BoxFit.cover,
-            ),
-            Center(
-              child: SvgPicture.asset('assets/images/Logo.svg'),
-            ),
-            Padding(
-              padding: EdgeInsetsDirectional.only(top: screenWidth(1)),
-              child: SpinKitThreeBounce(
-                color: AppColors.mainOrangeColor,
-                size: 50.0,
-              ),
-            )
-          ],
-        ),
-      ),
+      child: Scaffold(body: Text("hhhh")),
     );
   }
 }

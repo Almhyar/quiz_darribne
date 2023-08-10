@@ -18,6 +18,8 @@ class CustomTextField extends StatefulWidget {
     this.typeInput,
     this.validator,
     this.prefixIcon,
+    this.suffixIcon,
+    this.fillColor,
   });
   final String hintText;
   final TextEditingController controller;
@@ -32,6 +34,8 @@ class CustomTextField extends StatefulWidget {
   final TextInputType? typeInput;
   final String? Function(String?)? validator;
   final IconData? prefixIcon;
+  final IconData? suffixIcon;
+  final Color? fillColor;
 
   @override
   State<CustomTextField> createState() => _CustomTextFieldState();
@@ -53,14 +57,25 @@ class _CustomTextFieldState extends State<CustomTextField> {
         fontWeight: FontWeight.normal,
       ),
       decoration: InputDecoration(
-          prefixIcon:
-              widget.prefixIcon != null ? Icon(widget.prefixIcon) : null,
-          errorStyle: TextStyle(color: AppColors.mainOrangeColor),
-          fillColor: AppColors.mainGrey2Color,
+          prefixIcon: widget.prefixIcon != null
+              ? Icon(
+                  widget.prefixIcon,
+                  color: AppColors.mainPurpleColor.withOpacity(0.4),
+                )
+              : null,
+          suffixIcon: widget.suffixIcon != null
+              ? Icon(
+                  widget.suffixIcon,
+                  color: AppColors.mainPurpleColor.withOpacity(0.4),
+                )
+              : null,
+          errorStyle: TextStyle(color: AppColors.mainPurpleColor),
+          fillColor:
+              widget.fillColor ?? AppColors.mainBlue1Color.withOpacity(0.5),
           filled: true,
           hintText: widget.hintText,
           hintStyle: TextStyle(
-            color: AppColors.mainGreyColor,
+            color: AppColors.mainPurple2Color.withOpacity(0.5),
           ),
           contentPadding: EdgeInsetsDirectional.only(
               start: widget.contentPaddingLeft ?? 0,

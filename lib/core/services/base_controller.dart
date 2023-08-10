@@ -30,13 +30,13 @@ class BaseController extends GetxController {
     });
   }
 
-  Future runFullLoadingFutureFunction({
-    required Future function,
-  }) async {
-    checkConnection(() async {
-      customLoader();
-      await function;
-      BotToast.closeAllLoading();
-    });
-  }
+  // Future runFullLoadingFutureFunction({
+  //   required Future function,
+  // }) async {
+  //   checkConnection(() async {
+  //     customLoader();
+  //     await function;
+  //     BotToast.closeAllLoading();
+  //   });
+  // }
 }

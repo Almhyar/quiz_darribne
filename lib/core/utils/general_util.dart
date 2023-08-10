@@ -1,3 +1,4 @@
+import 'package:flutter/material.dart';
 import 'package:quiz/UI/shared/custom_widgets/custom_toast.dart';
 import 'package:quiz/app/my_app_controller.dart';
 import 'package:quiz/core/data/repositories/shared_preference_repository.dart';
@@ -29,4 +30,9 @@ void checkConnection(Function function) {
     CustomToast.showMessage(
         message: 'Please check internet connection',
         messageType: MessageType.WARNING);
+}
+
+extension EmptyPadding on num {
+  SizedBox get ph => SizedBox(height: toDouble());
+  SizedBox get pw => SizedBox(width: toDouble());
 }

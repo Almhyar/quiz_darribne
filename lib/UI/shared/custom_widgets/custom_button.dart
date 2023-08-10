@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:quiz/UI/shared/colors.dart';
 import 'package:quiz/UI/shared/utils.dart';
 
-class CustomButtonNew extends StatelessWidget {
+class CustomButton extends StatelessWidget {
   final String text;
   final Color? textColor;
   final double? textSize;
@@ -16,7 +16,7 @@ class CustomButtonNew extends StatelessWidget {
   final double? widthButton;
   final double? heightButton;
 
-  const CustomButtonNew({
+  const CustomButton({
     super.key,
     required this.text,
     this.textColor,
@@ -38,11 +38,11 @@ class CustomButtonNew extends StatelessWidget {
         onPressed();
       },
       style: ElevatedButton.styleFrom(
-        backgroundColor: backgroundColor ?? AppColors.mainOrangeColor,
-        shape: StadiumBorder(),
+        backgroundColor: backgroundColor ?? AppColors.mainPurpleColor,
+        // shape: StadiumBorder(),
         side: borderColor != null
             ? BorderSide(
-                width: 1, color: borderColor ?? AppColors.mainOrangeColor)
+                width: 1, color: borderColor ?? AppColors.mainPurpleColor)
             : null,
         fixedSize: Size(
             screenWidth(widthButton ?? 1.2), screenWidth(heightButton ?? 7)),

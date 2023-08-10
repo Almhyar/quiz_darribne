@@ -13,7 +13,7 @@ class LocationService {
 
     if (!await isPermissionGranted()) return null;
 
-    customLoader();
+    //customLoader();
 
     _locationData = await location.getLocation();
 
@@ -24,7 +24,7 @@ class LocationService {
 
   Future<geo.Placemark?> getLocationInfo(LocationData locationData,
       {bool? showLoader = true}) async {
-    if (showLoader!) customLoader();
+    //if (showLoader!) customLoader();
 
     List<geo.Placemark> placemarks = await geo.placemarkFromCoordinates(
         locationData.latitude ?? 0.0, locationData.longitude ?? 0.0);

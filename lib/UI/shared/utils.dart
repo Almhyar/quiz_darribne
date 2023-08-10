@@ -12,16 +12,16 @@ double screenHeight(double perecent) {
   return Get.size.height / perecent;
 }
 
-void customLoader() => BotToast.showCustomLoading(toastBuilder: (builder) {
-      return Container(
-        width: screenWidth(5),
-        height: screenWidth(5),
-        decoration: BoxDecoration(
-            color: AppColors.mainBlackColor.withOpacity(0.5),
-            borderRadius: BorderRadius.circular(15)),
-        child: SpinKitCircle(color: AppColors.mainOrangeColor),
-      );
-    });
+// void customLoader() => BotToast.showCustomLoading(toastBuilder: (builder) {
+//       return Container(
+//         width: screenWidth(5),
+//         height: screenWidth(5),
+//         decoration: BoxDecoration(
+//             color: AppColors.mainBlackColor.withOpacity(0.5),
+//             borderRadius: BorderRadius.circular(15)),
+//         child: SpinKitCircle(color: AppColors.mainOrangeColor),
+//       );
+//     });
 
 // double get taxAmount => 0.18;
 // double get deliveryAmount => 0.1;
