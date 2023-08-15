@@ -7,7 +7,7 @@ import 'package:path/path.dart' as path;
 import 'package:http_parser/http_parser.dart';
 
 class NetworkUtil {
-  static String baseUrl = 'training.owner-tech.com';
+  static String baseUrl = '192.168.31.96:8000';
   static var client = http.Client();
 
   static Future<dynamic> sendRequest({
@@ -18,7 +18,7 @@ class NetworkUtil {
     Map<String, dynamic>? body,
   }) async {
     try {
-      var uri = Uri.https(baseUrl, url, params);
+      var uri = Uri.http(baseUrl, url, params);
       late http.Response response;
 
       Map<String, dynamic> jsonRespons = {};
@@ -72,7 +72,7 @@ class NetworkUtil {
   }) async {
     try {
       var request =
-          http.MultipartRequest(type.name, Uri.https(baseUrl, url, params));
+          http.MultipartRequest(type.name, Uri.http(baseUrl, url, params));
 
       var _filesKeyList = files!.keys.toList();
 
@@ -109,6 +109,7 @@ class NetworkUtil {
       return responseJson;
     } catch (error) {
       print(error.toString());
+      return null;
     }
   }
 

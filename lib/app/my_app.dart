@@ -1,6 +1,6 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:quiz/UI/views/login_view.dart/login_view.dart';
+import 'package:quiz/UI/views/login_view/login_view.dart';
 import 'package:quiz/UI/views/register_view/register_view.dart';
 import 'package:quiz/UI/views/splash_screen/splash_screen_view.dart';
 import 'package:quiz/core/enums/connectivity_status.dart';

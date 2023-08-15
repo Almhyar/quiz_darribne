@@ -20,28 +20,26 @@ class _MainViewState extends State<MainView> {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        resizeToAvoidBottomInset: false,
-        bottomNavigationBar: Obx(() {
-          return BottomNavigationWidget(
-            bottomNavigation: controller.selected.value,
-            onTap: (select, pageNumber) {
-              controller.selected.value = select;
-              controller.pageController.jumpToPage(pageNumber);
-            },
-          );
-        }),
-        body: PageView(
-          physics: NeverScrollableScrollPhysics(),
-          controller: controller.pageController,
-          children: [
-            ProfileView(),
-            ImportantView(),
-            HomePageView(),
-            NotificationsView(),
-          ],
-        ),
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      bottomNavigationBar: Obx(() {
+        return BottomNavigationWidget(
+          bottomNavigation: controller.selected.value,
+          onTap: (select, pageNumber) {
+            controller.selected.value = select;
+            controller.pageController.jumpToPage(pageNumber);
+          },
+        );
+      }),
+      body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: controller.pageController,
+        children: [
+          ProfileView(),
+          ImportantView(),
+          HomePageView(),
+          NotificationsView(),
+        ],
       ),
     );
   }

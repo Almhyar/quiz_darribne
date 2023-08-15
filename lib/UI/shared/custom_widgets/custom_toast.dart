@@ -23,11 +23,11 @@ class CustomToast {
         shadowColor = AppColors.mainOrangeColor;
         break;
       case MessageType.REJECTED:
-        imageName = 'rejected-01';
+        imageName = 'rejected';
         shadowColor = AppColors.mainRedColor;
         break;
       case MessageType.SUCCSESS:
-        imageName = 'approved1-01';
+        imageName = 'approved';
         shadowColor = AppColors.mainColorGreen;
         break;
     }

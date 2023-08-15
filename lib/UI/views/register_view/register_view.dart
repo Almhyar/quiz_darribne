@@ -7,7 +7,7 @@ import 'package:quiz/UI/shared/custom_widgets/custom_text.dart';
 import 'package:quiz/UI/shared/custom_widgets/custom_text_button.dart';
 import 'package:quiz/UI/shared/custom_widgets/custom_text_field.dart';
 import 'package:quiz/UI/shared/utils.dart';
-import 'package:quiz/UI/views/login_view.dart/login_view.dart';
+import 'package:quiz/UI/views/login_view/login_view.dart';
 import 'package:quiz/UI/views/main_view/main_view.dart';
 import 'package:quiz/UI/views/register_view/register_controller.dart';
 import 'package:quiz/core/utils/general_util.dart';
@@ -160,7 +160,7 @@ class _RegisterViewState extends State<RegisterView> {
             CustomButton(
                 text: "إنشاء حساب",
                 onPressed: () {
-                  Get.to(MainView());
+                  controller.register();
                 }),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,

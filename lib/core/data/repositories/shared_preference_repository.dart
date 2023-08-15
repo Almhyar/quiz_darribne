@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:quiz/core/data/models/cart_model.dart';
 import 'package:get/get.dart';
-import 'package:quiz/core/data/models/apis/token_info.dart';
+import 'package:quiz/core/data/models/apis/login_model.dart';
 import 'package:quiz/core/enums/data_type.dart';
 
 import 'package:shared_preferences/shared_preferences.dart';
@@ -31,7 +31,7 @@ class SharedPreferenceRepository {
     }
   }
 
-  setTokenInfo(TokenInfo value) {
+  setTokenInfo(LoginModel value) {
     setPreferance(
       dataType: DataType.STRING,
       key: PREF_TOKEN_INFO,
@@ -39,15 +39,15 @@ class SharedPreferenceRepository {
     );
   }
 
-  TokenInfo? getTokenInfo() {
+  LoginModel? getTokenInfo() {
     if (globalSharedPrefs.containsKey(PREF_TOKEN_INFO)) {
-      return TokenInfo.fromJson(jsonDecode(getPrefrance(key: PREF_TOKEN_INFO)));
+      return LoginModel.fromJson(jsonDecode(getPrefrance(key: PREF_TOKEN_INFO)));
     } else {
       return null;
     }
   }
 
-  setIsLoggedIN(bool value) {
+  setLogIn(bool value) {
     setPreferance(
       dataType: DataType.BOOL,
       key: PREF_IS_LOGGEDIN,
